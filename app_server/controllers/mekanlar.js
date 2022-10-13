@@ -11,7 +11,7 @@ const mekanBilgisi = function (req, res, next) {
 };
 
 const yorumEkle = function (req, res, next) {
-  res.render("yorumekle", { title: "Yorum Ekle" });
+  res.render("yorumekle", { title: "Yorum Sayfası" });
 };
 
 module.exports = { anaSayfa, mekanBilgisi, yorumEkle };
