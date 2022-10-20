@@ -41,16 +41,16 @@ const mekanBilgisi = function (req, res, next) {
       "puan":"4",
       "saatler":[
         {
-          "gunler":"Pazartesi-Cuma",
+          "gunler":"  Pazartesi-Cuma",
           "acilis":"9:00",
           "kapanis":"23:00",
-          "kapali":"false"
+          "kapali": false
         },
         {
-          "gunler":"Cumartesi-Pazar",
+          "gunler":"  Cumartesi-Pazar",
           "acilis":"10:00",
           "kapanis":"22:00",
-          "kapali":"false"
+          "kapali": false
         }
       ],
       "imkanlar":["Kahve","Çay","Pasta"],
