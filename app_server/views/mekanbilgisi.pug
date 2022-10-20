@@ -1,26 +1,21 @@
 extends layout
-
-
+include fonksiyonlar/yildiz
 block content
     .row.page-header
-        h1 Edward's Cafe
+        h1 #{mekanDetay.ad}
     .row 
         .col-xs-12.col-md-12
             .row
                 .col-xs-12.col-sm-6
                     p.rating 
-                        span.glyphicon.glyphicon-star
-                        span.glyphicon.glyphicon-star
-                        span.glyphicon.glyphicon-star
-                        span.glyphicon.glyphicon-star
-                        span.glyphicon.glyphicon-star-empty 
-                    p Edward's Cafe
+                        +puanOlustur(mekanDetay.puan)
+                    p #{mekanDetay.adres}
                     .panel.panel-primary 
                         .panel-heading 
                             h2.panel-title Açılış Saatleri 
                         .panel-body 
                             p 
-                                | Pazartesi-Cuma: 7:00-23:00
+                                | #{mekanDetay.saatler.gunler}
                             p 
                                 | Cumartesi-Pazar: 9:00-22:00
                     .panel.panel-primary 
