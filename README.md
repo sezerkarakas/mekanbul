@@ -25,5 +25,3 @@
 ![Ekran Görüntüsü (94)](https://user-images.githubusercontent.com/41291320/202917960-54b38f05-720c-4924-a55a-5d59f8244476.png)
 
 
-
-![API_CollectinTest](https://user-images.githubusercontent.com/41291320/204546242-f956e1d0-9866-4798-b753-cf37ee5ceca2.png)
