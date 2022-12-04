@@ -1,9 +1,10 @@
+
 extends layout
 include fonksiyonlar/yildiz
 include fonksiyonlar/tarihformat
 block content
     .row.page-header
-        h1= mekanBaslik
+        h1 #{mekanDetay.ad}
     .row 
         .col-xs-12.col-md-12
             .row
@@ -17,11 +18,11 @@ block content
                         .panel-body 
                         each saat in mekanDetay.saatler
                             p 
-                                | #{saat.gunler} | &nbsp;
+                                |   &nbsp;  #{saat.gunler} :
                                 if (saat.kapali)
-                                    | Kapalı
+                                    |   Kapalı
                                 else 
-                                    | #{saat.acilis}-#{saat.kapanis}
+                                    |   #{saat.acilis}-#{saat.kapanis}  
                     .panel.panel-primary 
                         .panel-heading 
                             h2.panel-title Neler var?
@@ -50,7 +51,6 @@ block content
                                 .well.well-sm.review-header 
                                     span.rating
                                         +puanOlustur(yorum.puan)
-                                        | &nbsp;
                                     span.review-author= yorum.yorumYapan
                                     small.reviewTimestamp &nbsp;
                                     +tarihFormatla(yorum.tarih)
