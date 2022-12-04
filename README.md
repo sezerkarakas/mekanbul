@@ -1,4 +1,4 @@
-#Mekanları Listele
+# Replit
 
 [Mekanları Listele](https://mekanbul.sezerkarakas09.repl.co/?enlem=37.8&boylam=30.5) 
 
