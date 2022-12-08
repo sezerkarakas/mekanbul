@@ -2,7 +2,6 @@ const axios = require("axios")
 
 var apiSecenekleri = {
   sunucu:"https://mekanbul.sezerkarakas09.repl.co",
-  //sunucu:"https://localhost:3000",
   apiYolu: "/api/mekanlar/"
 }
 
@@ -20,7 +19,8 @@ var mesafeyiFormatla = function (mesafe) {
 }
 
 const anaSayfaOlustur = function (res, mekanListesi) {
-  var mesaj
+  var mesaj;
+  console.log(mekanListesi)
   if (!(mekanListesi instanceof Array)) {
     mesaj = "API hatası!"
     mekanListesi = []
